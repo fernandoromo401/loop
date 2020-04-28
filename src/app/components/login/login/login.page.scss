@@ -1,0 +1,45 @@
+.loop-center{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(65, 155, 182);
+    text-align: center;
+}
+.loop-text-1{
+    color: white;
+}
+.loop-input{
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: 0px;
+}
+.loop-input::placeholder{
+    text-align: center;
+    color: white;
+}
+.loop-form{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem
+}
+.loop-button{
+    border-radius: 25px;
+    background-color: white;
+    color: blue;
+    border: 0px;
+    text-transform: uppercase;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.loop-button:active{
+    border-radius: 25px;
+    background-color: white;
+    color: blue;
+    border: 0px;
+    text-transform: uppercase;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+}

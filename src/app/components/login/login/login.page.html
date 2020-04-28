@@ -1,0 +1,33 @@
+<div class="loop-center">
+  <div class="container text-center loop-center"> 
+    <div class="row mt-5">
+      <div class="col-xl-3"></div>
+      <div class="col-xl-6">
+        <div class="logo mb-5">
+          <img src="../../../../assets/img/logo.png" width="100%" height="" alt="">
+        </div>
+        <div class="mt-5">
+          <p class="loop-text-1">Te damos la Bienvenida</p>
+        </div>
+        <div>
+          <form (submit)="formLogin()" class="mt-3 mb-5 loop-form">
+            <div class="form-group">
+              <input type="email" [(ngModel)]="user.mail" name="mail" class="form-control loop-input" placeholder="Mail">
+            </div>
+            <div class="form-group">
+              <input type="password" [(ngModel)]="user.pass" name="pass" class="form-control loop-input" placeholder="Contraseña">
+            </div>
+            <button type="submit" class="btn btn-lg btn-block btn-primary mt-5 loop-button">Entrar</button>
+          </form>
+        </div>
+        <div class="mt-3 mb-4">
+          <a class="loop-text-1" href="">Olvide mi contraseña</a>
+        </div>
+        <div class="mt-3 mb-4">
+          <a class="loop-text-1" routerLink="../register">Registrarme</a>
+        </div>
+      </div>
+      <div class="col-xl-3"></div>
+    </div>
+  </div>
+</div>

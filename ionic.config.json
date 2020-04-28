@@ -1,0 +1,7 @@
+{
+  "name": "loop",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
