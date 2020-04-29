@@ -36,7 +36,7 @@ export class RegisterPage implements OnInit {
     let user = this.user
     if (user.name != undefined && user.lastName != undefined && user.dni != null && user.mail != undefined && user.career != undefined && user.file != null && user.password != undefined && user.password2 != undefined) {
       if (user.name != "" && user.lastName != "" && user.dni != "" && user.mail != "" && user.career != "" && user.file != "" && user.password != "" && user.password2 != "") {
-        if (user.dni.length == 8 || user.dni.length == 7) {
+        if (String(user.dni).length == 8 || String(user.dni).length == 7) {
           if (user.password == user.password2) {
             console.log(user)
           }
