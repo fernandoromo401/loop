@@ -10,19 +10,31 @@ import { Router } from '@angular/router';
 })
 export class LoginPage implements OnInit {
 
-  public user = {
-    mail: "",
-    pass: ""
-  }
-
+  public mail;
+  public pass;
+  public state = true
   constructor(private authService: LoginService, private router: Router) { }
 
   ngOnInit() {
   }
 
   formLogin(){
-    let token = this.authService.login(this.user)
-    localStorage.setItem('token', token.token)
-    this.router.navigate(["/profile"])
+
+ 
+
+    let user = {
+      mail: this.mail,
+      pass: this.pass
+    }
+    if (this.mail != undefined && this.pass != undefined) {
+      console.log(user)
+      let token = this.authService.login(user)
+      localStorage.setItem('token', token.token)
+      this.router.navigate(["/profile"])
+    }
+    else{
+      this.state = false
+    }
+
   }
 }

@@ -1,9 +1,72 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>register</ion-title>
-  </ion-toolbar>
+  <div >
+    <ion-toolbar class="loop-nav">
+      <ion-title><img height="20px" src="../../../../assets/icon/favicon.png" alt=""></ion-title>
+      <ion-buttons slot="start" routerLink="">
+        <ion-icon color="light" name="arrow-back-outline"></ion-icon>
+      </ion-buttons>
+    </ion-toolbar>
+  </div>
 </ion-header>
 
-<ion-content>
+<div class="loop-center">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-xl-3"></div>
+      <div class="col-xl-6">
+        <div>
+          <h3 class="loop-text-1">Registrarme</h3>
+          <p class="loop-text-1">Todos los campos son obligatorios</p>
+        </div>
+        <div>
+          <form (submit)="signUp()" class="mt-3 mb-5 loop-form">
+            <div class="form-group">
+              <input type="text" [(ngModel)]="user.name" name="name" class="form-control loop-input"
+                placeholder="Nombre" required>
+            </div>
+            <div class="form-group">
+              <input type="apellido" [(ngModel)]="user.lastName" name="lastName" class="form-control loop-input"
+                placeholder="Apellido" required>
+            </div>
+            <div class="form-group">
+              <input type="number" [(ngModel)]="user.dni" name="dni" class="form-control loop-input" placeholder="DNI"
+                required>
+            </div>
+            <div class="form-group">
+              <input type="text" [(ngModel)]="user.mail" name="mail" class="form-control loop-input" placeholder="Mail"
+                required>
+            </div>
+            <div class="form-group">
+              <input type="text" [(ngModel)]="user.career" name="career" class="form-control loop-input"
+                placeholder="Carrera" required>
+            </div>
+            <div class="form-group">
+              <input type="number" [(ngModel)]="user.file" name="file" class="form-control loop-input"
+                placeholder="Legajo" required>
+            </div>
+            <div class="form-group">
+              <input type="password" [(ngModel)]="user.password" name="password" class="form-control loop-input"
+                placeholder="Contraseña" required>
+            </div>
+            <div class="form-group">
+              <input type="password" [(ngModel)]="user.password2" name="password2" class="form-control loop-input"
+                placeholder="Confirmar contraseña" required>
+            </div>
+            <div *ngIf="state == 1" class="loop-alert">
+              <span>{{request.pass}}</span>
+            </div>
+            <div *ngIf="state == 2" class="loop-alert">
+              <span>{{request.fields}}</span>
+            </div>
+            <div *ngIf="state == 3" class="loop-alert">
+              <span>{{request.dni}}</span>
+            </div>
+            <button type="submit" class="btn btn-lg btn-block btn-primary mt-5 loop-button">Entrar</button>
+          </form>
 
-</ion-content>
+        </div>
+      </div>
+      <div class="col-xl-3"></div>
+    </div>
+  </div>
+</div>

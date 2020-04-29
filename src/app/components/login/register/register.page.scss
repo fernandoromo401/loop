@@ -1,0 +1,66 @@
+.loop-center{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(65, 155, 182);
+    text-align: center;
+}
+.loop-button:active{
+    border-radius: 25px;
+    background-color: white;
+    color: blue;
+    border: 0px;
+    text-transform: uppercase;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.loop-alert{
+    padding: 5px;
+    background-color: rgba(253, 40, 40, 0.3);
+    border-radius: 25px;
+    margin-bottom: 15px;
+    color: white;
+}
+.loop-text-1{
+    color: white;
+}
+.loop-input{
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: 0px;
+}
+.loop-input::placeholder{
+    text-align: center;
+    color: white;
+}
+.loop-form{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem
+}
+.loop-button{
+    border-radius: 25px;
+    background-color: white;
+    color: blue;
+    border: 0px;
+    text-transform: uppercase;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.loop-nav{
+    --background: rgba(0,114,171,1);
+    --background: -moz-linear-gradient(left, rgba(0,114,171,1) 0%, rgba(0,0,160,1) 100%);
+    --background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,114,171,1)), color-stop(100%, rgba(0,0,160,1)));
+    --background: -webkit-linear-gradient(left, rgba(0,114,171,1) 0%, rgba(0,0,160,1) 100%);
+    --background: -o-linear-gradient(left, rgba(0,114,171,1) 0%, rgba(0,0,160,1) 100%);
+    --background: -ms-linear-gradient(left, rgba(0,114,171,1) 0%, rgba(0,0,160,1) 100%);
+    --background: linear-gradient(to right, rgba(0,114,171,1) 0%, rgba(0,0,160,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0072ab', endColorstr='#0000a0', GradientType=1 );
+    border-bottom: 0.5px white solid;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(255,255,255,1);
+    box-shadow: 0px 2px 5px 0px rgba(255,255,255,1);
+}

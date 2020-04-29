@@ -5,6 +5,23 @@
     background-color: rgb(65, 155, 182);
     text-align: center;
 }
+.loop-button:active{
+    border-radius: 25px;
+    background-color: white;
+    color: blue;
+    border: 0px;
+    text-transform: uppercase;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.loop-alert{
+    padding: 5px;
+    background-color: rgba(253, 40, 40, 0.3);
+    border-radius: 25px;
+    margin-bottom: 15px;
+    color: white;
+}
 .loop-text-1{
     color: white;
 }
@@ -24,16 +41,6 @@
     padding: 1rem
 }
 .loop-button{
-    border-radius: 25px;
-    background-color: white;
-    color: blue;
-    border: 0px;
-    text-transform: uppercase;
-    height: 40px;
-    font-size: 15px;
-    font-weight: bold;
-}
-.loop-button:active{
     border-radius: 25px;
     background-color: white;
     color: blue;
