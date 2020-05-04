@@ -20,7 +20,8 @@ export class RegisterPage implements OnInit {
   public request = {
     fields: 'Todos los campos son obligatorios',
     pass: 'Las contraseñas no coinciden',
-    dni: 'Error en el DNI'
+    dni: 'Error en el DNI',
+    success: 'Los datos se cargaron'
   }
   public state = 0;
 
@@ -31,12 +32,15 @@ export class RegisterPage implements OnInit {
   ngOnInit() {
   }
 
-  signUp(){
+  signUp(form){
     let user = this.user
     if (user.name != undefined && user.lastName != undefined && user.dni != null && user.mail != undefined && user.career != undefined && user.password != undefined && user.password2 != undefined) {
       if (user.name != "" && user.lastName != "" && user.dni != "" && user.mail != "" && user.career != "" && user.password != "" && user.password2 != "") {
         if (String(user.dni).length == 8 || String(user.dni).length == 7) {
           if (user.password == user.password2) {
+            console.log(user)
+            this.state = 4
+            form.reset()
             console.log(user)
           }
           else{
