@@ -14,7 +14,6 @@ export class RegisterPage implements OnInit {
     dni: null,
     mail: undefined,
     career: undefined,
-    file: null,
     password: undefined,
     password2: undefined
   }
@@ -34,8 +33,8 @@ export class RegisterPage implements OnInit {
 
   signUp(){
     let user = this.user
-    if (user.name != undefined && user.lastName != undefined && user.dni != null && user.mail != undefined && user.career != undefined && user.file != null && user.password != undefined && user.password2 != undefined) {
-      if (user.name != "" && user.lastName != "" && user.dni != "" && user.mail != "" && user.career != "" && user.file != "" && user.password != "" && user.password2 != "") {
+    if (user.name != undefined && user.lastName != undefined && user.dni != null && user.mail != undefined && user.career != undefined && user.password != undefined && user.password2 != undefined) {
+      if (user.name != "" && user.lastName != "" && user.dni != "" && user.mail != "" && user.career != "" && user.password != "" && user.password2 != "") {
         if (String(user.dni).length == 8 || String(user.dni).length == 7) {
           if (user.password == user.password2) {
             console.log(user)

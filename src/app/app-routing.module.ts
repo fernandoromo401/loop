@@ -4,7 +4,7 @@ import { GuardTokenGuard } from './guard/guard-token.guard';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'login',
     loadChildren: () => import('./components/login/login/login.module').then( m => m.LoginPageModule)
   },
   {
@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'profile',
     loadChildren: () => import('./components/profile/profile/profile.module').then( m => m.ProfilePageModule),
     canActivate: [GuardTokenGuard]
+  },
+  {
+    path: '',
+    loadChildren: () => import('./components/home/home.module').then( m => m.HomePageModule)
   },
 ];
 

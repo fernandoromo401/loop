@@ -14,7 +14,7 @@ export class GuardTokenGuard implements CanActivate {
     if (this.authService.loggedIn()) {
       return true;
     }
-    this.router.navigate([""])
+    this.router.navigate(["login"])
     return false
   }
   
