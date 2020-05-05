@@ -19,9 +19,7 @@ export class LoginPage implements OnInit {
   }
 
   formLogin(){
-
- 
-
+    
     let user = {
       mail: this.mail,
       pass: this.pass
